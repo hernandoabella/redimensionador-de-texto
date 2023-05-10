@@ -3,7 +3,11 @@ body {
     text-align:center;
     color:purple;
     background:linear-gradient(to left, #BB0FE0, #00F5C0);
-    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 button{
     color:blue;
