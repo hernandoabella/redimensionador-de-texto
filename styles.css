@@ -114,6 +114,6 @@ body.dark-mode {
 @media screen and (max-width: 768px) {
   .container {
     width: 100vw;
-    max-width: 100%;
+    max-width: 90%;
   }
 }
