@@ -110,3 +110,10 @@ body.dark-mode {
     color: var(--dark-text-color);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    max-width: 100%;
+  }
+}
