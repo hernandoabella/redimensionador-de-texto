@@ -10,7 +10,7 @@ body {
 }
 
 body.dark-mode {
-  background: #1F1F1F;
+  background: #1f1f1f;
   color: #fff;
 }
 
@@ -20,7 +20,7 @@ body.dark-mode {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
-  height: 200px;
+  height: 220px;
   border-radius: 10px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -114,6 +114,7 @@ body.dark-mode {
 @media screen and (max-width: 768px) {
   .container {
     width: 90vw;
+    height: 200px;
     max-width: 90%;
   }
 }
