@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Text resizer</title>
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <h1>Resize Text</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-J/krnI7Lsj+xRy6J6mN8Xz+qmL1bU9Yp9Z5kWd2J7I3n+uOZzGgErhka+jlNce5qyr1B5AtZfV/x3Z9yAjeXjg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1 id="text">Redimensionar</h1>
         <div id="lamp" class="volume">
-            <div id="inner" class="inner"></div>
+          <div id="inner" class="inner"></div>
         </div>
-        <button id="mines" onclick="decrease()" class="btn font3 blue-bg lightblue-clr">-</button>
-        <input type="text" id="size" value="10" placeholder="Enter Size....." class="input"/>
-        <button id="mine" onclick="increase()" class="btn font3 blue-bg lightblue-clr">+</button>
-        
-        <p id="text" class="font2"><b>Change my Size</b></p>
-        <script>
-            var size=document.getElementById("size");
-            var text=document.getElementById("text");
-            function decrease(){
-                var textSize=Number(size.value);
-                if(textSize>0){
-                    size.value=textSize-1;
-                    text.style.fontSize=size.value+"px"
-                }
-            }
-            function increase(){
-                var textSize=Number(size.value);
-                if(textSize<500){
-                    size.value=textSize+1;
-                    text.style.fontSize=size.value+"px";
-                }
-            }
-        </script>
-    </body>
+      
+        <div class="size-control">
+            <button id="mines" onclick="decrease()" class="btn font3 blue-bg lightblue-clr"><i class="fas fa-minus"></i></button>
+            <input type="text" id="size" value="32" placeholder="Ingresar tamaño" class="input" />
+            <button id="mine" onclick="increase()" class="btn font3 blue-bg lightblue-clr"><i class="fas fa-plus"></i></button>
+          </div>
+          
+      </div>
+      
+    
+    <script src="./script.js"></script>
+</body>
 </html>
