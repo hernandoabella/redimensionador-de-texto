@@ -1,5 +1,5 @@
 :root {
-  --dark-bg-color: #202020; /* color de fondo en modo oscuro */
+  --dark-bg-color: #1f1f1f; /* color de fondo en modo oscuro */
   --dark-text-color: #f5f5f5; /* color de texto en modo oscuro */
 }
 
@@ -106,8 +106,13 @@ body.dark-mode {
 
 /* estilos para el modo oscuro */
 @media (prefers-color-scheme: dark) {
-  .container {
+  body {
     background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+  }
+
+  .container {
+    background-color: #373737;
     color: var(--dark-text-color);
   }
 }
