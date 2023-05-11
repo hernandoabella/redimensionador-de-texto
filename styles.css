@@ -20,7 +20,7 @@ body.dark-mode {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
-  height: 230px;
+  height: 210px;
   border-radius: 10px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -113,7 +113,7 @@ body.dark-mode {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 100vw;
+    width: 90vw;
     max-width: 90%;
   }
 }
