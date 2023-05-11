@@ -2,6 +2,8 @@ body {
   background: #00509d;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
 }
 
 .container {
@@ -16,22 +18,55 @@ body {
   text-align: center;
 }
 
-button {
-  color: blue;
-  background-color: deepskyblue;
-  border: none;
-  border-radius: 100%;
-  padding: 10px;
+#texto {
+  margin-top: 90px;
+  font-weight: bold;
+  transition: font-size 0.1s ease-in-out;
 }
 
-.buttons {
-  display: flex;
+.controles {
+  position: absolute;
+  bottom: 10px;
+  margin: auto 10px;
+  width: 280px;
 }
 
-input {
-  border: 3px solid deepskyblue;
-  background-color: lightblue;
-  border-radius: 10px;
-  padding: 10px;
+.controles input {
+  outline: none;
+  width: 50px;
   text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
+.controles button {
+  padding: 20px;
+  border-radius: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.controles button:nth-child(1):hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+.controles button:nth-child(3):hover {
+  background: #28a745;
+  color: #fff;
+}
+
+@keyframes aumentarVerde {
+    50% {
+        color: #28a745;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes disminuirRojo {
+    50% {
+        color: #dc3545;
+        transform: scale(1.1);
+    }
 }

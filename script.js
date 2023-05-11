@@ -1,18 +1,24 @@
-const size = document.getElementById("size");
-const text = document.getElementById("text");
+const tamano = document.getElementById("tamano");
+const texto = document.getElementById("texto");
 
-const decrease = () => {
-  let textSize = Number(size.value);
-  if (textSize > 0) {
-    size.value = textSize - 1;
-    text.style.fontSize = `${size.value}px`;
+const disminuir = () => {
+  let tamanoTexto = Number(tamano.value);
+  if (tamanoTexto > 10) {
+    tamano.value = tamanoTexto - 1;
+    texto.style.fontSize = `${tamano.value}px`;
   }
+  texto.style.animation = "none";
+  void texto.offsetWidth;
+  texto.style.animation = "disminuirRojo .3s";
 };
 
-const increase = () => {
-  let textSize = Number(size.value);
-  if (textSize < 500) {
-    size.value = textSize + 1;
-    text.style.fontSize = `${size.value}px`;
+const aumentar = () => {
+  let tamanoTexto = Number(tamano.value);
+  if (tamanoTexto < 30) {
+    tamano.value = tamanoTexto + 1;
+    texto.style.fontSize = `${tamano.value}px`;
   }
+  texto.style.animation = "none";
+  void texto.offsetWidth;
+  texto.style.animation = "aumentarVerde .3s";
 };

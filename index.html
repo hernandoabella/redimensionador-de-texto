@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-J/krnI7Lsj+xRy6J6mN8Xz+qmL1bU9Yp9Z5kWd2J7I3n+uOZzGgErhka+jlNce5qyr1B5AtZfV/x3Z9yAjeXjg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <h1 id="text">Redimensionar</h1>
-        <div id="lamp" class="volume">
-          <div id="inner" class="inner"></div>
-        </div>
-      
-        <div class="size-control">
-            <button id="mines" onclick="decrease()" class="btn font3 blue-bg lightblue-clr"><i class="fas fa-minus"></i></button>
-            <input type="text" id="size" value="32" placeholder="Ingresar tamaño" class="input" />
-            <button id="mine" onclick="increase()" class="btn font3 blue-bg lightblue-clr"><i class="fas fa-plus"></i></button>
-          </div>
-          
+      <p id="texto">Redimensionar</p>
+      <div id="lamp" class="volume">
+        <div id="inner" class="inner"></div>
       </div>
-      
-    
+
+      <div class="controles">
+        <button onclick="disminuir()"><i class="fas fa-minus"></i></button>
+        <input
+          id="tamano"
+          type="text"
+          name="tamano"
+          value="20"
+          placeholder="Ingresar tamaño"
+          class="input"
+        />
+        <button onclick="aumentar()"><i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
