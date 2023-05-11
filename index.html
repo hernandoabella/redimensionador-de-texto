@@ -13,25 +13,16 @@
     />
   </head>
   <body>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
     <div class="container">
+      <i id="moon-icon" class="fas fa-moon dark-mode-icon" onclick="toggleDarkMode()"></i>
       <p id="texto">Redimensionar</p>
-
       <div class="controles">
         <button onclick="disminuir()"><i class="fas fa-minus"></i></button>
-        <input
-          id="tamano"
-          type="text"
-          name="tamano"
-          value="20"
-          placeholder="Ingresar tamaño"
-          class="input"
-        />
+        <input id="tamano" type="text" name="tamano" value="20" placeholder="Ingresar tamaño" class="input" />
         <button onclick="aumentar()"><i class="fas fa-plus"></i></button>
       </div>
     </div>
-
+    
     <script src="./script.js"></script>
   </body>
 </html>

@@ -26,4 +26,8 @@ const aumentar = () => {
 const toggleDarkMode = () => {
   const body = document.body;
   body.classList.toggle("dark-mode");
+
+  const moonIcon = document.getElementById("moon-icon");
+  moonIcon.classList.toggle("fa-moon");
+  moonIcon.classList.toggle("fa-sun");
 };
