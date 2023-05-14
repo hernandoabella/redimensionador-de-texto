@@ -3,26 +3,26 @@ const texto = document.getElementById("texto");
 const moonIcon = document.getElementById("moon-icon");
 const body = document.body;
 
-let modo = localStorage.getItem("modo") || "claro"; // 1. 
+let modo = localStorage.getItem("modo") || "claro";
 
-const setModo = (modo) => { // 2. 
+const setModo = (modo) => {
   body.classList.toggle("dark-mode", modo === "oscuro");
-  localStorage.setItem("modo", modo); // 5.
+  moonIcon.classList.toggle("fa-moon", modo === "claro");
+  moonIcon.classList.toggle("fa-sun", modo === "oscuro");
+  localStorage.setItem("modo", modo);
 }
 
-const toggleModo = () => { // 3.
+const toggleModo = () => {
   modo = modo === "claro" ? "oscuro" : "claro";
   setModo(modo);
-  moonIcon.classList.toggle("fa-moon");
-  moonIcon.classList.toggle("fa-sun");
 };
 
-window.addEventListener("load", () => { // 4.
+window.addEventListener("load", () => {
   setModo(modo);
 });
 
 window.addEventListener("unload", () => {
-  localStorage.setItem("modo", modo); // 5.
+  localStorage.setItem("modo", modo);
 });
 
 const disminuir = () => {
