@@ -38,7 +38,7 @@ const disminuir = () => {
 
 const aumentar = () => {
   let tamanoTexto = Number(tamano.value);
-  if (tamanoTexto < 30) {
+  if (tamanoTexto < 40) {
     tamano.value = tamanoTexto + 1;
     texto.style.fontSize = `${tamano.value}px`;
   }
