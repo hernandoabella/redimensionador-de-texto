@@ -4,7 +4,7 @@ const body = document.body;
 
 const disminuir = () => {
   let tamanoTexto = Number(tamano.value);
-  if (tamanoTexto > 10) {
+  if (tamanoTexto > 20) {
     tamano.value = tamanoTexto - 1;
     texto.style.fontSize = `${tamano.value}px`;
   }
