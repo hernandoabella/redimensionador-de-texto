@@ -66,29 +66,29 @@ body {
 }
 
 .controles button:nth-child(1) {
-  background: #DB005B;
+  background: #db005b;
   color: #fff;
 }
 
 .controles button:nth-child(3) {
-  background: #47A992;
+  background: #47a992;
   color: #fff;
 }
 
 @keyframes aumentarVerde {
   50% {
-    color: #47A992;
+    color: #47a992;
   }
 }
 
 @keyframes disminuirRojo {
   50% {
-    color: #DB005B;
+    color: #db005b;
   }
 }
 
-/* estilos para el modo oscuro */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark), (color-scheme: dark) {
+  /* Estilos para modo oscuro */
   body {
     background-color: var(--dark-bg-color);
     color: var(--dark-text-color);
