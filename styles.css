@@ -74,7 +74,7 @@ body {
 }
 
 .controles button:nth-child(3):hover {
-  background: #1398a9;
+  background: #22A699;
   color: #fff;
 }
 
@@ -92,12 +92,12 @@ input[type="number"] {
 
 @keyframes aumentarVerde {
   50% {
-    color: #47a992;
+    color: #22A699;
   }
 }
 
 @keyframes disminuirRojo {
   50% {
-    color: #db005b;
+    color: #ff3b3b;
   }
 }
