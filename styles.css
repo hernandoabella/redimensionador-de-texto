@@ -2,7 +2,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(270deg, #292fb1, #ff5e8e);
+  background: linear-gradient(90deg, #f1c27b, #ffd89c);
 }
 
 .container {
@@ -17,14 +17,18 @@ body {
   transform: translate(-50%, -50%);
   width: 320px;
   height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #texto {
   font-weight: bold;
   transition: 0.3s;
-  color: #333;
-  letter-spacing: 3px;
-  padding-left: 30px;
+  color: #3a3a3a;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .controles {
@@ -40,10 +44,11 @@ body {
   outline: none;
   border: none;
   text-align: center;
-  padding: 20px;
+  padding: 18px;
   border-radius: 12px;
   width: 60px;
   font-size: 1rem;
+  border: 1px solid #3a3a3a;
 }
 
 .controles button {
@@ -54,6 +59,8 @@ body {
   transition: 0.3s;
   border: none;
   outline: none;
+  background: #4fc0d0;
+  color: #3a3a3a;
 }
 
 .controles button:active {
@@ -61,13 +68,13 @@ body {
   transform: translateY(-2px) scale(1.1);
 }
 
-.controles button:nth-child(1) {
-  background: #db005b;
+.controles button:nth-child(1):hover {
+  background: #ff3b3b;
   color: #fff;
 }
 
-.controles button:nth-child(3) {
-  background: #47a992;
+.controles button:nth-child(3):hover {
+  background: #1398a9;
   color: #fff;
 }
 
