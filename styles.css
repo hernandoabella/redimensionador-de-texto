@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-  font-family: "Fraunces", serif;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(270deg, #292fb1, #ff5e8e);
 }
 
 .container {
@@ -24,6 +24,7 @@ body {
   margin-top: 80px;
   font-weight: bold;
   font-size: 30px;
+  transition: 0.3s;
 }
 
 .controles {
@@ -61,25 +62,29 @@ body {
 }
 
 .controles button:nth-child(1) {
-  background: #DB005B;
+  background: #db005b;
   color: #fff;
 }
 
 .controles button:nth-child(3) {
-  background: #47A992;
+  background: #47a992;
   color: #fff;
+}
+
+select {
+  padding: 20px;
+  border: 0px;
+  outline: 0px;
 }
 
 @keyframes aumentarVerde {
   50% {
-    color: #47A992;
+    color: #47a992;
   }
 }
 
 @keyframes disminuirRojo {
   50% {
-    color: #DB005B;
+    color: #db005b;
   }
 }
-
-
