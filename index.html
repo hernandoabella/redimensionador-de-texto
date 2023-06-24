@@ -25,13 +25,18 @@
   </head>
   <body>
     <div class="container">
-      <p id="texto">Texto</p>
+      <p id="texto">TEXTO</p>
       <div class="controles">
-        <button onclick="disminuir()"><i class="fas fa-minus"></i></button>
-        <input id="tamano" type="number" name="tamano" value="30" placeholder="Ingresar tamaño" class="input" />
-        <button onclick="aumentar()"><i class="fas fa-plus"></i></button>
+        <button id="btnDisminuir" onclick="disminuir()"><i class="fas fa-minus"></i></button>
+        <select id="tamano" class="input" onchange="cambiarTamano()">
+          <option value="20">20</option>
+          <option value="30" selected>30</option>
+          <option value="40">40</option>
+        </select>
+        <button id="btnAumentar" onclick="aumentar()"><i class="fas fa-plus"></i></button>
       </div>
     </div>
+    
     
     <script src="./script.js"></script>
   </body>
