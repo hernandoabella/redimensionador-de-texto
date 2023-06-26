@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-image: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+  background-size: 400% 400%;
   -webkit-animation: animacionFondo 6s ease infinite;
   -moz-animation: animacionFondo 6s ease infinite;
   -o-animation: animacionFondo 6s ease infinite;
@@ -15,6 +16,7 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -78,7 +80,7 @@ body {
 }
 
 .controles button:nth-child(3):hover {
-  background: #22A699;
+  background: #22a699;
   color: #fff;
 }
 
@@ -96,7 +98,7 @@ input[type="number"] {
 
 @keyframes aumentarVerde {
   50% {
-    color: #22A699;
+    color: #22a699;
   }
 }
 
