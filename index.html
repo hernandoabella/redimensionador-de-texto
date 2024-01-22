@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redimensionador de texto</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <p id="texto">TEXTO</p>
-      <div class="controles">
-        <button id="btnDisminuir" onclick="disminuir()"><i class="fas fa-minus"></i></button>
-        <input id="tamano" type="number" name="tamano" value="40" placeholder="– –" class="input" />
-        <button id="btnAumentar" onclick="aumentar()"><i class="fas fa-plus"></i></button>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redimensionador de texto</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css" />
+</head>
+
+<body>
+  <div class="container">
+    <textarea id="resizableText">Sample Text</textarea>
+    <input type="range" id="textSizeSlider" min="8" max="32" value="16">
+    <div class="controls">
+        <span>Text Size: <span id="textSizeValue">16</span>px</span>
     </div>
-    
-    <script src="./script.js"></script>
-  </body>
+</div>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
