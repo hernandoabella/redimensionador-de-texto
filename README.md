@@ -1,3 +1,3 @@
-# cambiar-tamaño-del-texto
+# text-resizer
 
-esta aplicación te permite cambiar el tamaño del texto usando vanilla javascript.
+This application allows you to adjust the text size to your needs.
